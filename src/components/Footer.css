@@ -1,42 +1,97 @@
+/* -----------------------
+   Footer Base
+------------------------ */
 .site-footer {
-  border-top: 1px solid var(--muted, #e9e9e9);
-  padding: 18px 0;
-  color: var(--text, #333);
-  font-size: 14px;
+  background: #F0F2FF;
+  border-top: 1px solid rgba(163, 144, 228, 0.15);
+  padding: 2.5rem 1.5rem;
+  margin-top: 4rem;
 }
 
-.site-footer .footer-inner {
+/* Reuse container sizing */
+.site-footer .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* -----------------------
+   Layout
+------------------------ */
+.footer-inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
 }
 
+/* -----------------------
+   Brand / Left Side
+------------------------ */
 .footer-left {
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  color: #1A1A1A;
+  letter-spacing: 0.6px;
 }
 
+/* Optional: script logo later */
+/*
+.footer-left {
+  font-family: 'Bellasina', cursive;
+}
+*/
+
+/* -----------------------
+   Social Icons
+------------------------ */
 .footer-right {
   display: flex;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 .social {
-  color: inherit;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
+  color: #A390E4;
+  background: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(163, 144, 228, 0.12);
+  transition: all 0.25s ease;
   text-decoration: none;
 }
 
 .social svg {
-  width: 18px;
-  height: 18px;
-  display: block;
+  width: 20px;
+  height: 20px;
 }
 
+/* Hover Effects */
 .social:hover {
-  background: rgba(0, 0, 0, 0.04);
+  color: #FFFFFF;
+  background: linear-gradient(
+    45deg,
+    #A390E4,
+    #EE99C2
+  );
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(163, 144, 228, 0.25);
+}
+
+/* Focus (Accessibility) */
+.social:focus-visible {
+  outline: 2px solid #A390E4;
+  outline-offset: 3px;
+}
+
+/* -----------------------
+   Responsive
+------------------------ */
+@media (max-width: 700px) {
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
 }

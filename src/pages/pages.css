@@ -1,31 +1,276 @@
-:root{
-  --max-width: 100%;
-  --muted: #666;
-  --accent: #2c2c7a;
-  --page-gap: 2rem;
+/* -----------------------
+   Google Fonts
+------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400&display=swap');
+
+/* -----------------------
+   CSS Variables
+------------------------ */
+:root {
+  --bg-primary: #F0F2FF;
+  --brand-purple: #A390E4;
+  --accent-pink: #EE99C2;
+  --text-dark: #1A1A1A;
+  --text-muted: #3D5A80;
+  --white: #FFFFFF;
+
+  --radius-lg: 18px;
+  --radius-md: 14px;
+
+  --soft-shadow: 0 10px 30px rgba(163, 144, 228, 0.1);
+}
+
+/* -----------------------
+   Global Styles
+------------------------ */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-dark);
+  letter-spacing: 0.5px;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+/* -----------------------
+   Hero Section
+------------------------ */
+.hero {
+  background: radial-gradient(
+    circle,
+    #F0F2FF 0%,
+    #E5E9FF 100%
+  );
+  padding: 6rem 1.5rem;
 }
 
 .container {
-  max-width: var(--max-width);
+  max-width: 1100px;
   margin: 0 auto;
-  padding: calc(var(--page-gap) + 0.75rem) 1.5rem;
 }
 
-.page { padding: calc(var(--page-gap) - .4rem) 0; width: 100%; box-sizing: border-box; }
-
-.page h2 { margin: 0 0 0.6rem; color: #222; font-weight: 600; }
-
-.lead { color: var(--muted); margin-bottom: 1rem; font-size: 1.02rem; }
-
-.card { background: white; border-radius: 10px; padding: 1.2rem; box-shadow: 0 6px 18px rgba(30,34,60,0.06); }
-
-.card.small { max-width: 680px; margin-top: 1rem; }
-
-/* Ensure pages occupy reasonable vertical space and look consistent */
-.page .card.small { min-height: 120px; display: flex; align-items: center; }
-
-@media (max-width: 640px) {
-  .container { padding: 1rem; }
-  .card.small { padding: 1rem; }
-  .lead { font-size: .98rem; }
+/* -----------------------
+   Intro Layout
+------------------------ */
+.intro {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+  align-items: center;
+  margin-bottom: 5rem;
 }
+
+.intro-text h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.intro-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.75rem;
+  color: var(--brand-purple);
+  margin-bottom: 1.5rem;
+}
+
+.intro-text p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  max-width: 480px;
+}
+
+/* -----------------------
+   Button
+------------------------ */
+.primary-btn {
+  border: none;
+  padding: 0.9rem 2.2rem;
+  font-size: 0.95rem;
+  font-weight: 400;
+  border-radius: var(--radius-lg);
+  color: var(--white);
+  cursor: pointer;
+  background: linear-gradient(
+    45deg,
+    var(--brand-purple),
+    var(--accent-pink)
+  );
+  box-shadow: var(--soft-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 35px rgba(163, 144, 228, 0.18);
+}
+
+/* -----------------------
+   Image Styling
+------------------------ */
+.intro-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.intro-image {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--soft-shadow);
+  filter: brightness(1.05) contrast(0.95);
+}
+
+/* -----------------------
+   Cards
+------------------------ */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  background: var(--white);
+  padding: 2.2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--soft-shadow);
+  text-align: center;
+}
+
+.card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: var(--text-dark);
+}
+
+.card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* -----------------------
+   Responsive
+------------------------ */
+@media (max-width: 900px) {
+  .intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .intro-text p {
+    margin: 0 auto 2rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -----------------------
+   Blog Page
+------------------------ */
+.blog-page {
+  padding-bottom: 5rem;
+}
+
+/* Intro */
+.blog-intro {
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.blog-intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.blog-subtitle {
+  color: #3D5A80;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Featured Post */
+.blog-feature {
+  max-width: 720px;
+  margin: 0 auto 4rem;
+  background: #FFFFFF;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(163, 144, 228, 0.12);
+}
+
+.blog-feature h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-meta {
+  font-size: 0.8rem;
+  color: #A390E4;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+
+.blog-excerpt {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #3D5A80;
+  margin-bottom: 1.5rem;
+}
+
+/* Blog List */
+.blog-list {
+  max-width: 720px;
+  margin: 0 auto;
+  display: grid;
+  gap: 2.5rem;
+}
+
+.blog-item {
+  background: #FFFFFF;
+  padding: 2.2rem;
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(163, 144, 228, 0.1);
+}
+
+.blog-item h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Read More Link */
+.read-more {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #A390E4;
+  transition: color 0.25s ease;
+}
+
+.read-more:hover {
+  color: #EE99C2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-feature,
+  .blog-item {
+    padding: 2rem;
+  }
+}
+
