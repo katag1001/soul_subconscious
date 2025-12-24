@@ -1,0 +1,31 @@
+:root{
+  --max-width: 100%;
+  --muted: #666;
+  --accent: #2c2c7a;
+  --page-gap: 2rem;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: calc(var(--page-gap) + 0.75rem) 1.5rem;
+}
+
+.page { padding: calc(var(--page-gap) - .4rem) 0; width: 100%; box-sizing: border-box; }
+
+.page h2 { margin: 0 0 0.6rem; color: #222; font-weight: 600; }
+
+.lead { color: var(--muted); margin-bottom: 1rem; font-size: 1.02rem; }
+
+.card { background: white; border-radius: 10px; padding: 1.2rem; box-shadow: 0 6px 18px rgba(30,34,60,0.06); }
+
+.card.small { max-width: 680px; margin-top: 1rem; }
+
+/* Ensure pages occupy reasonable vertical space and look consistent */
+.page .card.small { min-height: 120px; display: flex; align-items: center; }
+
+@media (max-width: 640px) {
+  .container { padding: 1rem; }
+  .card.small { padding: 1rem; }
+  .lead { font-size: .98rem; }
+}
