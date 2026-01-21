@@ -1,5 +1,5 @@
 import '../../pages/pages.css'
-import Footer from '../../components/Footer'
+
 
 export default function CreatingSafetyWithinYourself() {
   return (
@@ -29,7 +29,7 @@ export default function CreatingSafetyWithinYourself() {
         </div>
       </section>
 
-      <Footer />
+
     </>
   )
 }

@@ -1,5 +1,5 @@
 import '../../pages/pages.css'
-import Footer from '../../components/Footer'
+
 
 export default function HealingNotLinearJourney() {
   return (
@@ -28,7 +28,6 @@ export default function HealingNotLinearJourney() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

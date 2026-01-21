@@ -1,5 +1,5 @@
 import '../pages/pages.css'
-import Footer from '../components/Footer'
+
 
 export default function About() {
   return (
@@ -48,7 +48,6 @@ export default function About() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

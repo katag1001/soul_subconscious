@@ -1,5 +1,5 @@
 import '../../pages/pages.css'
-import Footer from '../../components/Footer'
+
 
 export default function PowerOfSubconscious() {
   return (
@@ -30,7 +30,6 @@ export default function PowerOfSubconscious() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

@@ -1,10 +1,11 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Header from './components/Header'
+import Header from './components/Header.jsx'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Blog from './pages/Blog'
+import Footer from './components/Footer.jsx'
 
 // Blog posts
 import PowerOfSubconscious from './pages/blogs/PowerOfSubconscious'
@@ -30,6 +31,8 @@ function App() {
           </Routes>
         </main>
       </div>
+      
+      <Footer />
     </BrowserRouter>
   )
 }

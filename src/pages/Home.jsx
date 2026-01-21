@@ -1,11 +1,12 @@
 import '../pages/pages.css'
-import Footer from '../components/Footer'
+
 import BiancaImg from '../assets/Bianca.png'
 
 export default function Home() {
   return (
     <>
       <section className="page hero">
+        
         <div className="container">
 
           <div className="intro">
@@ -29,6 +30,7 @@ export default function Home() {
           </div>
 
           <div className="card-grid">
+
             <div className="card">
               <h3>Our Mission</h3>
               <p>
@@ -36,6 +38,8 @@ export default function Home() {
                 deep personal growth.
               </p>
             </div>
+
+            
 
             <div className="card">
               <h3>Our Approach</h3>
@@ -57,7 +61,6 @@ export default function Home() {
         </div>
       </section>
 
-      <Footer />
     </>
   )
 }

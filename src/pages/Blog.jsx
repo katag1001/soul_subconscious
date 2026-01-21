@@ -1,6 +1,5 @@
 import '../pages/pages.css'
 import { Link } from 'react-router-dom'
-import Footer from '../components/Footer'
 
 export default function Blog() {
   return (
@@ -22,9 +21,13 @@ export default function Blog() {
             <h2>The Power of the Subconscious Mind</h2>
             <p className="blog-meta">Mindfulness · Healing</p>
             <p className="blog-excerpt">
+
               The subconscious mind quietly shapes our thoughts, emotions,
               and behaviors. By learning to listen inward, we begin to create
               space for gentle, lasting change.
+
+
+
             </p>
             <Link to="/blog/power-of-the-subconscious-mind" className="read-more">Read more →</Link>
           </article>
@@ -57,7 +60,7 @@ export default function Blog() {
         </div>
       </section>
 
-      <Footer />
+
     </>
   )
 }

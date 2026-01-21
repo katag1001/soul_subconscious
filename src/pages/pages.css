@@ -44,12 +44,15 @@ body {
     #F0F2FF 0%,
     #E5E9FF 100%
   );
-  padding: 6rem 1.5rem;
+  padding: 1rem 1.5rem;
+
+
 }
 
 .container {
   max-width: 1100px;
   margin: 0 auto;
+  vertical-align:top;
 }
 
 /* -----------------------
@@ -58,7 +61,8 @@ body {
 .intro {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
-  gap: 3rem;
+  padding-top: 0;
+  gap: 1rem;
   align-items: center;
   margin-bottom: 5rem;
 }
@@ -67,6 +71,7 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 3rem;
   margin-bottom: 0.5rem;
+
 }
 
 .intro-text h2 {
@@ -189,6 +194,7 @@ body {
 }
 
 .blog-intro h1 {
+  padding-top: 0;
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   margin-bottom: 1rem;
