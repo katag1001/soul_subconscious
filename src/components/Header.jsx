@@ -3,15 +3,26 @@ import { useEffect, useState } from 'react'
 import './Header.css'
 
 export default function Header() {
-  const [bgColor, setBgColor] = useState('rgb(240, 242, 255)') // bg-primary
+  const [bgColor, setBgColor] = useState('rgb(240, 242, 255)')
+  const [hidden, setHidden] = useState(false)
+  const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY
-      const maxScroll = 300 // distance over which color transition happens
+
+      // ----- show / hide header -----
+      if (scrollY > lastScrollY && scrollY > 80) {
+        setHidden(true)   // scrolling down
+      } else {
+        setHidden(false)  // scrolling up
+      }
+      setLastScrollY(scrollY)
+
+      // ----- background color fade -----
+      const maxScroll = 400
       const progress = Math.min(scrollY / maxScroll, 1)
 
-      // bg-primary → pale-lilac
       const start = { r: 240, g: 242, b: 255 }
       const end = { r: 227, g: 212, b: 240 }
 
@@ -24,10 +35,13 @@ export default function Header() {
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [lastScrollY])
 
   return (
-    <header className="site-header" style={{ backgroundColor: bgColor }}>
+    <header
+      className={`site-header ${hidden ? 'header-hidden' : ''}`}
+      style={{ backgroundColor: bgColor }}
+    >
       <div className="container header-inner">
         <div className="brand">
           <h1 className="site-title">Soul & Subconscious</h1>

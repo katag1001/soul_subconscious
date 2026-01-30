@@ -113,3 +113,14 @@
     gap: 1.5rem;
   }
 }
+
+
+.site-header {
+  transition:
+    background-color 0.25s ease,
+    transform 0.35s ease;
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}
