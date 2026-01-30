@@ -103,21 +103,23 @@
    RTT Section
 ------------------------ */
 .rtt-info {
-  display: flex;     
+  display: flex;
   flex-direction: row;
-  overflow: hidden; 
-  margin: 2rem 0;         
-
-}   
+  overflow: hidden;
+  z-index: 10;
+  margin-top: -5rem;
+} 
 
 /* LEFT COLUMN */
 .rtt-title {
   flex: 0 0 30%;            
-  background-color: var(--brand-purple);
+  background-color: var(--pale-lilac); 
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3rem 1rem;
+  z-index: 10;
+  margin-top: -5rem;
 }
 
 .rtt-title h2 {
@@ -130,11 +132,13 @@
 
 /* RIGHT COLUMN */
 .rtt-detail {
-  flex: 1;                   /* takes remaining space */
-  background-color: var(--accent-pink);
+  flex: 1;                 
+  background-color: var(--softest-lilac);
   padding: 3rem 2rem;
   display: flex;
   align-items: center;
+  z-index: 10;
+  margin-top: -5rem;
 }
 
 .rtt-detail p {

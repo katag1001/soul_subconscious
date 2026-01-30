@@ -28,7 +28,7 @@ export default function Home() {
     <>
 
       {/* Hero Section */}
-        <WaveBackground height="520px">
+      <WaveBackground height="520px">
       <section className="page hero">
       
         <div className="container">
@@ -50,8 +50,7 @@ export default function Home() {
       </WaveBackground>
 
 
-
-      {/* Video Introduction */}
+      {/* Video Introduction 
       <section className="video-intro">
         <div className="container">
           <h2>Meet Bianca</h2>
@@ -68,23 +67,7 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
-      </section>
-
-      
-    <div style={{ padding: "60px" }}>
-      <CardCarousel cards={cards} />
-    </div>
-
-      {/* Free Hypnosis Download */}
-      <section className="download-hypnosis">
-        <div className="container">
-          <div className="download-info-wrapper">
-          <h2>Download Your Free Hypnosis Recording</h2>
-          <p>Start your journey to calm and clarity today with a free guided session.</p>
-          </div>
-          <a className="primary-btn">Download Now</a>
-        </div>
-      </section>
+      </section>*/}
 
       {/* RTT Explanation */}
       <section className="page rtt-info">
@@ -99,6 +82,24 @@ export default function Home() {
           </p>
         </div>
       </section>
+      
+      {/* Cards */}
+      <div style={{ padding: "60px" }}>
+        <CardCarousel cards={cards} />
+      </div>
+
+      {/* Free Hypnosis Download */}
+      <section className="download-hypnosis">
+        <div className="container">
+          <div className="download-info-wrapper">
+          <h2>Download Your Free Hypnosis Recording</h2>
+          <p>Start your journey to calm and clarity today with a free guided session.</p>
+          </div>
+          <a className="primary-btn">Download Now</a>
+        </div>
+      </section>
+
+
 
       {/* Testimonials */}
       <section className="testimonials">
