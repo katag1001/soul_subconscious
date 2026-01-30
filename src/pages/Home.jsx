@@ -3,6 +3,7 @@ import '../pages/home.css'
 import BiancaImg from '../assets/Bianca.png'
 
 export default function Home() {
+
   return (
     <>
       {/* Hero Section */}
@@ -23,37 +24,11 @@ export default function Home() {
               <img src={BiancaImg} alt="Bianca" className="intro-image" />
             </div>
           </div>
-
-          <div className="card-grid">
-            <div className="card">
-              <h3>Our Mission</h3>
-              <p>
-                To provide a safe, nurturing, and inspiring environment for
-                deep personal growth.
-              </p>
-            </div>
-
-            <div className="card">
-              <h3>Our Approach</h3>
-              <p>
-                A blend of therapeutic practices, creativity, and mindfulness
-                tailored to you.
-              </p>
-            </div>
-
-            <div className="card">
-              <h3>Our Values</h3>
-              <p>
-                Compassion, authenticity, and gentle transformation at your
-                own pace.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Video Introduction */}
-      <section className="page video-intro">
+      <section className="video-intro">
         <div className="container">
           <h2>Meet Bianca</h2>
           <p>Learn more about me and how I can support your personal growth journey.</p>
@@ -71,43 +46,33 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Areas I Can Help With */}
-      <section className="page help-with">
+      {/* Free Hypnosis Download */}
+      <section className="download-hypnosis">
         <div className="container">
-          <h2>How I Can Help</h2>
-          <ul className="help-list">
-            <li>Fears & Phobias</li>
-            <li>Confidence</li>
-            <li>Anxiety</li>
-            <li>Addictions & Habits</li>
-            <li>Relationships</li>
-            <li>Weight Problems</li>
-          </ul>
+          <div className="download-info-wrapper">
+          <h2>Download Your Free Hypnosis Recording</h2>
+          <p>Start your journey to calm and clarity today with a free guided session.</p>
+          </div>
+          <a className="primary-btn">Download Now</a>
         </div>
       </section>
 
       {/* RTT Explanation */}
       <section className="page rtt-info">
-        <div className="container">
+        <div className="rtt-title">
           <h2>What is RTT?</h2>
+        </div>
+        <div className="rtt-detail">
           <p>
             RTT (Rapid Transformational Therapy) is a powerful method that combines the most
             effective principles of Hypnotherapy, Psychotherapy, NLP, and CBT to create rapid,
             permanent transformation.
           </p>
-
-          <h3>What to Expect from an RTT Session</h3>
-          <ul className="rtt-steps">
-            <li><strong>Initial Consultation:</strong> Discuss your goals and challenges.</li>
-            <li><strong>Hypnosis:</strong> A deep, relaxed state to access your subconscious mind.</li>
-            <li><strong>Rewiring:</strong> Identify and reframe limiting beliefs to empower you.</li>
-            <li><strong>Lasting Change:</strong> Walk away with practical tools for life-long transformation.</li>
-          </ul>
         </div>
       </section>
 
       {/* Testimonials */}
-      <section className="page testimonials">
+      <section className="testimonials">
         <div className="container">
           <h2>What Clients Say</h2>
           <div className="testimonial-grid">
@@ -127,6 +92,7 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Lead Form & Call to Action */}
       <section className="page lead-form">
         <div className="container">
@@ -141,15 +107,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Free Hypnosis Download */}
-      <section className="page download-hypnosis">
-        <div className="container">
-          <h2>Download Your Free Hypnosis Recording</h2>
-          <p>Start your journey to calm and clarity today with a free guided session.</p>
-          <a href="/assets/free-hypnosis.mp3" download className="primary-btn">Download Now</a>
-        </div>
-      </section>
+
     </>
   )
 }
-
