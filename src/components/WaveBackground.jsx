@@ -61,14 +61,14 @@ export default function WaveBackground({
         {/* FRONT WAVES */}
         <path
           className="wave-front"
-          fill="var(--white)"
+          fill="var(--bg-primary)"
           opacity="0.75"
           d="M0,390 C320,340 580,450 860,410 1120,370 1320,380 1440,360 L1440,520 L0,520 Z"
         />
 
         <path
           className="wave-extra"
-          fill="var(--white)"
+          fill="var(--bg-primary)"
           opacity="0.45"
           d="M0,410 C300,370 600,430 900,400 1200,370 1440,390 1440,390 L1440,520 L0,520 Z"
         />
