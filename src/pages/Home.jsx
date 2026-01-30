@@ -1,11 +1,33 @@
 import '../pages/pages.css'
 import '../pages/home.css'
 import BiancaImg from '../assets/Bianca.png'
+import CardCarousel from '../components/CardCarousel.jsx';
 
 export default function Home() {
+  const cards = [
+  {
+    title: "First Card",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image: "/images/image1.jpg",
+  },
+  {
+    title: "Second Card",
+    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image: "/images/image2.jpg",
+  },
+  {
+    title: "Third Card",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    image: "/images/image3.jpg",
+  },
+];
+
 
   return (
     <>
+
+
+
       {/* Hero Section */}
       <section className="page hero">
         <div className="container">
@@ -45,6 +67,11 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      
+    <div style={{ padding: "60px" }}>
+      <CardCarousel cards={cards} />
+    </div>
 
       {/* Free Hypnosis Download */}
       <section className="download-hypnosis">
