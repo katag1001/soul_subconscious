@@ -9,17 +9,17 @@ export default function Home() {
   {
     title: "First Card",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: "/images/image1.jpg",
+    image:  {BiancaImg},
   },
   {
     title: "Second Card",
     text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: "/images/image2.jpg",
+    image: {BiancaImg},
   },
   {
     title: "Third Card",
     text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image: "/images/image3.jpg",
+    image:  {BiancaImg},
   },
 ];
 
