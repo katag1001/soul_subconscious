@@ -9,7 +9,7 @@ export default function WaveBackground({
   return (
     <section
       className={`wave-section ${className}`}
-      style={{ height }}
+      style={{ "--wave-y": "-40%" }}
     >
       <svg
         className="wave-svg"
