@@ -69,19 +69,21 @@ export default function Home() {
         </div>
       </section>*/}
 
-      {/* RTT Explanation */}
-      <section className="page rtt-info">
-        <div className="rtt-title">
-          <h2>What is RTT?</h2>
-        </div>
-        <div className="rtt-detail">
-          <p>
-            RTT (Rapid Transformational Therapy) is a powerful method that combines the most
-            effective principles of Hypnotherapy, Psychotherapy, NLP, and CBT to create rapid,
-            permanent transformation.
-          </p>
-        </div>
-      </section>
+{/* RTT Explanation */}
+<section className="rtt-info">
+  <div className="rtt-title">
+    <h2>What is RTT?</h2>
+  </div>
+
+  <div className="rtt-detail">
+    <p>
+      RTT (Rapid Transformational Therapy) is a powerful method that combines the most
+      effective principles of Hypnotherapy, Psychotherapy, NLP, and CBT to create rapid,
+      permanent transformation.
+    </p>
+  </div>
+</section>
+
       
       {/* Cards */}
       <div style={{ padding: "60px" }}>

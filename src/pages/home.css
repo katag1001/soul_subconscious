@@ -103,23 +103,21 @@
    RTT Section
 ------------------------ */
 .rtt-info {
-  display: flex;
-  flex-direction: row;
+  position: relative;
+  background-color: var(--pale-lilac);
+  min-height: 60vh;
+  padding: 3rem;
   overflow: hidden;
-  z-index: 10;
   margin-top: -5rem;
-} 
+  z-index: 10;
+  min-height: 70vh;
+}
 
-/* LEFT COLUMN */
+/* TITLE – TOP LEFT */
 .rtt-title {
-  flex: 0 0 30%;            
-  background-color: var(--pale-lilac); 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 1rem;
-  z-index: 10;
-  margin-top: -5rem;
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
 }
 
 .rtt-title h2 {
@@ -127,18 +125,16 @@
   font-size: 3rem;
   color: var(--white);
   margin: 0;
-  text-align: center;
+  text-align: left;
 }
 
-/* RIGHT COLUMN */
+/* TEXT – UNDERNEATH, FULL WIDTH */
 .rtt-detail {
-  flex: 1;                 
-  background-color: var(--softest-lilac);
-  padding: 3rem 2rem;
-  display: flex;
-  align-items: center;
-  z-index: 10;
-  margin-top: -5rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 3rem;
+  right: 3rem;
+
 }
 
 .rtt-detail p {
@@ -147,21 +143,32 @@
   color: var(--text-dark);
   line-height: 1.8;
   margin: 0;
+  text-align: right;
 }
 
-/* Responsive */
+/* -----------------------
+   Responsive
+------------------------ */
 @media (max-width: 768px) {
   .rtt-info {
-    flex-direction: column;
+    padding: 2rem;
   }
 
-  .rtt-title, .rtt-detail {
-    flex: 1 1 100%;
-    text-align: center;
+  .rtt-title,
+  .rtt-detail {
+    position: static;
+  }
+
+  .rtt-title {
+    margin-bottom: 2rem;
   }
 
   .rtt-title h2 {
     font-size: 2.5rem;
+  }
+
+  .rtt-detail p {
+    font-size: 1.1rem;
   }
 }
 

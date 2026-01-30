@@ -5,7 +5,7 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(240, 242, 255, 0.85);
+  background: var(--pale-lilac);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(163, 144, 228, 0.15);
   height: 70px;             
