@@ -2,6 +2,7 @@ import '../pages/pages.css'
 import '../pages/home.css'
 import BiancaImg from '../assets/Bianca.png'
 import CardCarousel from '../components/CardCarousel.jsx';
+import WaveBackground from '../components/WaveBackground.jsx';
 
 export default function Home() {
   const cards = [
@@ -26,10 +27,10 @@ export default function Home() {
   return (
     <>
 
-
-
       {/* Hero Section */}
+        <WaveBackground height="520px">
       <section className="page hero">
+      
         <div className="container">
           <div className="intro">
             <div className="intro-text">
@@ -42,12 +43,13 @@ export default function Home() {
               <button className="primary-btn">Explore Services</button>
             </div>
 
-            <div className="intro-image-wrapper">
-              <img src={BiancaImg} alt="Bianca" className="intro-image" />
-            </div>
           </div>
         </div>
+        
       </section>
+      </WaveBackground>
+
+
 
       {/* Video Introduction */}
       <section className="video-intro">

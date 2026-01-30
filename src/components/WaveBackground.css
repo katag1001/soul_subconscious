@@ -1,0 +1,88 @@
+.wave-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: var(--bg-primary);
+}
+
+/*.wave-svg {
+  position: absolute;
+  inset: 0;
+  width: 115%;
+  height: 100%;
+}*/
+
+.wave-svg {
+  position: absolute;
+  inset: 0;
+  width: 130%;
+  height: 160%;
+  transform: translate(
+    var(--wave-x, -15%),
+    var(--wave-y, -20%)
+  );
+}
+
+
+.wave-back {
+  animation: waveFloatBack 26s infinite alternate;
+}
+
+.wave-mid {
+  animation: waveFloatMid 20s infinite alternate;
+}
+
+.wave-front {
+  animation: waveFloatFront 14s infinite alternate;
+}
+
+@keyframes waveFloatBack {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-40px) translateY(12px);
+  }
+}
+
+@keyframes waveFloatMid {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(30px) translateY(-14px);
+  }
+}
+
+@keyframes waveFloatFront {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  100% {
+    transform: translateX(-20px) translateY(8px);
+  }
+}
+
+.wave-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  padding: 4rem 6vw;
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  font-family: var(--plain-font);
+  color: var(--text-dark);
+}
+
+.wave-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at 50% 80%,
+    rgba(238, 153, 194, 0.12),
+    transparent 70%
+  );
+  pointer-events: none;
+}
