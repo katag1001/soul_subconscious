@@ -107,7 +107,7 @@ export default function Home() {
       {/* Testimonials */}
       <section className="testimonials">
         <div className="container">
-          <h2>What Clients Say</h2>
+          <h2>What Our Clients Say...</h2>
           <div className="testimonial-grid">
             <div className="testimonial-card">
               <p>"Bianca helped me overcome my anxiety and gave me tools I use daily. Truly life-changing!"</p>

@@ -3,6 +3,7 @@
   width: 100%;
   overflow: hidden;
   background: var(--bg-primary);
+  z-index: 1;
 }
 
 /*.wave-svg {

@@ -131,7 +131,6 @@
   text-align: left;
 }
 
-/* TEXT – UNDERNEATH, FULL WIDTH */
 .rtt-detail {
   position: absolute;
   bottom: 3rem;
@@ -182,9 +181,22 @@
 ------------------------ */
 
 .testimonials{
-  padding: 6rem 0rem;
+  padding: 4rem 0rem 6rem 0rem;
   text-align: center;
+  background-color: var(--pale-lilac);
+
+  margin: -5rem 0rem 6rem 0rem;
+  z-index: 30;
+  position: relative;
 }
+
+.testimonials h2 {
+  font-family: var(--serif-font);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
 .testimonial-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -219,8 +231,6 @@
   box-shadow: var(--soft-shadow);
   max-width: 600px;
   margin: 0 auto 6rem auto;
-
-  /* FLEX MAGIC */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +238,6 @@
   text-align: center;
 }
 
-/* Optional: adds breathing room between heading/text/form */
 .lead-form h2 {
   margin-bottom: 0.5rem;
 }
