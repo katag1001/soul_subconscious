@@ -69,7 +69,7 @@ export default function Home() {
 
       
       {/* Cards */}
-      <div style={{ padding: "60px" }}>
+      <div className="carousel-wrapper">
         <CardCarousel cards={cards} />
       </div>
 

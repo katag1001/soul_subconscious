@@ -85,7 +85,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end; /* pushes text to bottom */
+  justify-content: flex-end; 
   text-align: right;
   padding-left: 2rem;
 }
@@ -103,7 +103,7 @@
   line-height: 1.65;
   color: var(--text-muted);
   max-width: 90%;
-  margin-left: auto; /* keeps text tucked right */
+  margin-left: auto; 
 }
 
 /* =======================
@@ -140,7 +140,7 @@
   font-size: 22px;
   color: black;
   z-index: 5;
-  background: var(--white);
+  background: none;
 }
 
 .nav-arrow.left {
@@ -153,5 +153,115 @@
 
 .nav-arrow:hover {
   transform: translateY(-50%) scale(1.08);
-  box-shadow: 0 14px 35px rgba(163, 144, 228, 0.2);
 }
+
+
+/* =====================================================
+   CAROUSEL – MOBILE MODE
+===================================================== */
+
+@media (max-width: 768px) {
+
+  /* Container */
+  .carousel-container {
+    height: auto;
+    padding: 3rem 0;
+  }
+
+  .carousel-track {
+    height: auto;
+  }
+
+  /* Cards */
+  .carousel-card {
+    position: relative;
+    width: 90vw;
+    height: auto;
+    max-width: 420px;
+    transform: translate(-50%, 0);
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .carousel-card.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, 0);
+  }
+
+
+  .carousel-card.left,
+  .carousel-card.right {
+    display: none;
+  }
+
+  .card-content {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1.25rem;
+  }
+
+  .card-image {
+    width: 100%;
+    height: 200px;
+  }
+
+  .card-image img {
+    border-radius: var(--radius-md);
+  }
+
+  /* Text */
+  .card-text {
+    padding-left: 0;
+    text-align: center;
+    justify-content: flex-start;
+  }
+
+  .card-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-text p {
+    font-size: 0.95rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* Arrows */
+  .nav-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    top: auto;
+    bottom: -2.5rem;
+    transform: none;
+  }
+
+  .nav-arrow.left {
+    left: 35%;
+  }
+
+  .nav-arrow.right {
+    right: 35%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .nav-arrow {
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+  }
+
+  .nav-arrow.left {
+    left: 8px;
+  }
+
+  .nav-arrow.right {
+    right: 8px;
+  }
+}
+
