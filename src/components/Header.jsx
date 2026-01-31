@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import './Header.css'
 
 export default function Header() {
-  const [bgColor, setBgColor] = useState('rgb(240, 242, 255)')
+  const [bgColor, setBgColor] = useState('rgba(240, 242, 255, 0)')
   const [hidden, setHidden] = useState(false)
   const [lastScrollY, setLastScrollY] = useState(0)
 
@@ -13,24 +13,26 @@ export default function Header() {
 
       // ----- show / hide header -----
       if (scrollY > lastScrollY && scrollY > 80) {
-        setHidden(true)   // scrolling down
+        setHidden(true)
       } else {
-        setHidden(false)  // scrolling up
+        setHidden(false)
       }
       setLastScrollY(scrollY)
 
-      // ----- background color fade -----
+      // ----- background color + transparency fade -----
       const maxScroll = 400
       const progress = Math.min(scrollY / maxScroll, 1)
 
-      const start = { r: 240, g: 242, b: 255 }
-      const end = { r: 227, g: 212, b: 240 }
+      const start = { r: 240, g: 242, b: 255, a: 0 }
+      const end = { r: 200, g: 187, b: 230, a: 0.5 }
+
 
       const r = Math.round(start.r + (end.r - start.r) * progress)
       const g = Math.round(start.g + (end.g - start.g) * progress)
       const b = Math.round(start.b + (end.b - start.b) * progress)
+      const a = +(start.a + (end.a - start.a) * progress).toFixed(2)
 
-      setBgColor(`rgb(${r}, ${g}, ${b})`)
+      setBgColor(`rgba(${r}, ${g}, ${b}, ${a})`)
     }
 
     window.addEventListener('scroll', handleScroll)
@@ -47,10 +49,39 @@ export default function Header() {
           <h1 className="site-title">Soul & Subconscious</h1>
         </div>
         <nav className="site-nav">
-          <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
-          <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>About</NavLink>
-          <NavLink to="/services" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Services</NavLink>
-          <NavLink to="/blog" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Blog</NavLink>
+          <NavLink
+            to="/"
+            end
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            About
+          </NavLink>
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Services
+          </NavLink>
+          <NavLink
+            to="/blog"
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            Blog
+          </NavLink>
         </nav>
       </div>
     </header>

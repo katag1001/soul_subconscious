@@ -2,17 +2,22 @@
    Hero Section
 ------------------------ */
 
-.hero {
-  padding: 1em 1rem 0rem 1rem;
+.hero-homepage {
   text-align: center;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
+  background-image: url("src/assets/bg-hero2.png");
+  background-size: cover;       
+  background-position: top center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(4px);
 }
 
 /* -----------------------
    Intro Section
 ------------------------ */
 .intro {
+  padding : 10rem 0rem 4rem 0rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,8 +113,6 @@
   min-height: 60vh;
   padding: 3rem;
   overflow: hidden;
-  margin-top: -5rem;
-  z-index: 10;
   min-height: 70vh;
 }
 

@@ -28,8 +28,7 @@ export default function Home() {
     <>
 
       {/* Hero Section */}
-      <WaveBackground height="520px">
-      <section className="page hero">
+      <section className="page hero-homepage">
       
         <div className="container">
           <div className="intro">
@@ -47,8 +46,7 @@ export default function Home() {
         </div>
         
       </section>
-      </WaveBackground>
-
+      
 
       {/* Video Introduction 
       <section className="video-intro">
@@ -69,28 +67,31 @@ export default function Home() {
         </div>
       </section>*/}
 
-{/* RTT Explanation */}
-<section className="rtt-info">
-  <div className="rtt-title">
-    <h2>What is RTT?</h2>
-  </div>
-
-  <div className="rtt-detail">
-    <p>
-      RTT (Rapid Transformational Therapy) is a powerful method that combines the most
-      effective principles of Hypnotherapy, Psychotherapy, NLP, and CBT to create rapid,
-      permanent transformation.
-    </p>
-  </div>
-</section>
-
       
       {/* Cards */}
       <div style={{ padding: "60px" }}>
         <CardCarousel cards={cards} />
       </div>
 
+
+      {/* RTT Explanation */}
+      <section className="rtt-info">
+        <div className="rtt-title">
+          <h2>What is RTT?</h2>
+        </div>
+
+        <div className="rtt-detail">
+          <p>
+            RTT (Rapid Transformational Therapy) is a powerful method that combines the most
+            effective principles of Hypnotherapy, Psychotherapy, NLP, and CBT to create rapid,
+            permanent transformation.
+          </p>
+        </div>
+      </section>
+
+
       {/* Free Hypnosis Download */}
+      <WaveBackground>
       <section className="download-hypnosis">
         <div className="container">
           <div className="download-info-wrapper">
@@ -100,7 +101,7 @@ export default function Home() {
           <a className="primary-btn">Download Now</a>
         </div>
       </section>
-
+      </WaveBackground>
 
 
       {/* Testimonials */}
