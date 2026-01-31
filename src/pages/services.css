@@ -1,0 +1,15 @@
+.services {
+  padding: 120px 0rem;
+  background-image: url("src/assets/bg-clouds3.png");
+  backdrop-filter: blur(4px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+
+
+
+

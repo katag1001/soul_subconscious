@@ -307,6 +307,7 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  margin-bottom: 6rem;
 }
 
 .lead-form h2 {

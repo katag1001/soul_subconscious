@@ -1,8 +1,8 @@
 import '../pages/pages.css'
-import '../pages/services.css'
+import '../pages/FAQs.css'
 import CardGrid from '../components/CardGrid.jsx';
 
-export default function Services() {
+export default function FAQs() {
 
 const cardsData = [
   { title: "Card 1", details: "Details about Card 1" },
@@ -21,7 +21,7 @@ const cardsData = [
 
   return (
     <>
-      <section className="page services">
+      <section className="page FAQs">
         <div>
           <CardGrid cards={cardsData} />
         </div>

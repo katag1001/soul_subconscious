@@ -4,6 +4,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Blog from './pages/Blog'
+import FAQs from './pages/FAQs'
 import Footer from './components/Footer.jsx'
 
 // Blog posts
@@ -22,6 +23,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/faqs" element={<FAQs />} />
 
             {/* Blog post routes */}
             <Route path="/blog/power-of-the-subconscious-mind" element={<PowerOfSubconscious />} />

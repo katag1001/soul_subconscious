@@ -58,6 +58,16 @@ export default function Header() {
           >
             Home
           </NavLink>
+
+          <NavLink
+            to="/faqs"
+            className={({ isActive }) =>
+              isActive ? 'nav-link active' : 'nav-link'
+            }
+          >
+            FAQs
+          </NavLink>
+
           <NavLink
             to="/about"
             className={({ isActive }) =>
@@ -66,6 +76,7 @@ export default function Header() {
           >
             About
           </NavLink>
+
           <NavLink
             to="/services"
             className={({ isActive }) =>
@@ -74,6 +85,7 @@ export default function Header() {
           >
             Services
           </NavLink>
+
           <NavLink
             to="/blog"
             className={({ isActive }) =>
@@ -82,6 +94,7 @@ export default function Header() {
           >
             Blog
           </NavLink>
+
         </nav>
       </div>
     </header>
