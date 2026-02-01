@@ -3,6 +3,7 @@ import '../pages/home.css'
 import BiancaImg from '../assets/Bianca.png'
 import CardCarousel from '../components/CardCarousel.jsx';
 import WaveBackground from '../components/WaveBackground.jsx';
+import BookingForm from '../components/BookingForm.jsx';
 
 export default function Home() {
   const cards = [
@@ -74,6 +75,7 @@ export default function Home() {
       </div>
 
 
+
       {/* RTT Explanation */}
       <section className="rtt-info">
         <div className="rtt-title">
@@ -126,7 +128,7 @@ export default function Home() {
       </section>
 
 
-      {/* Lead Form & Call to Action */}
+      {/* Lead Form & Call to Action 
       <section className="page lead-form">
         <div className="container">
           <h2>Book a Call</h2>
@@ -138,7 +140,9 @@ export default function Home() {
             <button type="submit" className="primary-btn">Book a Call</button>
           </form>
         </div>
-      </section>
+      </section>*/}
+
+      <BookingForm />
 
 
     </>

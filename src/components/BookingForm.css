@@ -1,21 +1,18 @@
 /* =====================================================
-   SERVICES INTRO
+   SERVICES PAGE STYLES
 ===================================================== */
+
+/* ---------- Intro Section ---------- */
 .services-intro {
-  padding: 6rem 1rem;
+  padding: 4rem 1rem;
 }
 
 .intro-wrapper {
   display: flex;
   align-items: center;
-  gap: 3rem;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 2rem;
   flex-wrap: wrap;
-  text-align: left;
-}
-
-.intro-text {
-  max-width: 500px;
 }
 
 .intro-text h2 {
@@ -26,98 +23,65 @@
 
 .intro-text p {
   font-size: 1.1rem;
+  line-height: 1.6;
   color: var(--text-muted);
-  line-height: 1.7;
 }
 
 .intro-image img {
-  max-width: 400px;
-  width: 100%;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--soft-shadow);
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-md);
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 768px) {
-  .intro-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .intro-image img {
-    max-width: 300px;
-  }
-}
-
-/* =====================================================
-   SERVICES GRID
-===================================================== */
+/* ---------- Services Grid ---------- */
 .services-grid {
   padding: 4rem 1rem;
-  background-color: var(--softest-lilac);
 }
 
 .grid-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2.5rem;
+  gap: 2rem;
 }
 
 .service-card {
-  background-color: var(--white);
+  background: var(--softest-lilac);
   padding: 2rem;
-  border-radius: var(--radius-lg);
+  border-radius: var(--radius-md);
   box-shadow: var(--soft-shadow);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(163, 144, 228, 0.15);
 }
 
 .service-card h3 {
   font-family: var(--serif-font);
   font-size: 1.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .service-card p {
   font-size: 1rem;
-  color: var(--text-muted);
   line-height: 1.6;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 768px) {
-  .grid-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* =====================================================
-   FULL-WIDTH IMAGE
-===================================================== */
+/* ---------- Full-width Image ---------- */
 .services-image-wide img {
   width: 100%;
+  height: auto;
   display: block;
-  margin-top: 2rem;
+  margin: 0;
+  padding: 0;
 }
 
-
 /* =====================================================
-   BOOKING / CALL-TO-ACTION
+   BOOKING SECTION
 ===================================================== */
 .services-booking {
-  background: var(--white);
   padding: 4rem 1rem;
-  display: flex;
-  justify-content: center;
 }
 
 .booking-wrapper {
   max-width: 600px;
   width: 100%;
+  margin: 0 auto;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -136,7 +100,7 @@
   margin-bottom: 2rem;
 }
 
-/* Booking Form */
+/* ---------- Booking Form ---------- */
 .booking-form {
   display: flex;
   flex-direction: column;
@@ -149,6 +113,7 @@
   border-radius: var(--radius-md);
   border: 1px solid #ccc;
   font-size: 1rem;
+  background: var(--bg-primary);
 }
 
 .booking-form textarea {
@@ -161,6 +126,25 @@
 }
 
 /* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .grid-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    max-width: 100%;
+  }
+
+  .intro-image img {
+    max-width: 80%;
+  }
+}
+
 @media (max-width: 600px) {
   .services-booking {
     padding: 3rem 1rem;
