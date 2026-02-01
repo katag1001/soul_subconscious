@@ -9,7 +9,7 @@ export default function PowerOfSubconscious() {
           <h1>The Power of the Subconscious Mind</h1>
           <p className="blog-meta">Mindfulness · Healing</p>
 
-          <div className="card">
+          <div className="blog-card">
             <p>
               The subconscious mind quietly shapes our thoughts, emotions, and behaviors.
               By learning to listen inward, we begin to create space for gentle, lasting change.

@@ -10,7 +10,7 @@ export default function CreatingSafetyWithinYourself() {
           <h1>Creating Safety Within Yourself</h1>
           <p className="blog-meta">Self-Compassion</p>
 
-          <div className="card">
+          <div className="blog-card">
             <p>
               Emotional safety isn’t something we find outside of ourselves — it’s something
               we learn to cultivate within through small, steady practices.

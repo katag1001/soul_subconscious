@@ -58,7 +58,7 @@
 }
 
 .blog-item {
-  background: radial-gradient(circle, #F0F2FF 0%, #c8bbe6 100%);
+  background: var(--bg-lilac);
   margin: 0;
   padding: 2.2rem;
   border-radius: 18px;
@@ -70,10 +70,12 @@
 }
 
 .blog-item h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--serif-font); 
   font-size: 1.5rem;
   margin-bottom: 0.4rem;
 }
+
+
 
 /* Read More Link */
 .read-more {
@@ -86,8 +88,11 @@
 }
 
 .read-more:hover {
-  color: #EE99C2;
+  color: var(--text-dark);
+  transform: translateY(-3px);
+  transition: all 0.3s ease;
 }
+
 
 /* Responsive */
 @media (max-width: 768px) {

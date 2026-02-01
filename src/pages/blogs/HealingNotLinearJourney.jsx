@@ -10,7 +10,7 @@ export default function HealingNotLinearJourney() {
           <h1>Healing Is Not a Linear Journey</h1>
           <p className="blog-meta">Growth & Awareness</p>
 
-          <div className="card">
+          <div className="blog-card">
             <p>
               Healing unfolds in cycles rather than straight lines. Recognizing this can
               help us meet ourselves with more patience and less self-judgment.
