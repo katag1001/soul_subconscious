@@ -1,5 +1,5 @@
 import '../../pages/pages.css'
-
+import '../../pages/blog.css'
 
 export default function PowerOfSubconscious() {
   return (
