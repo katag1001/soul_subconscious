@@ -7,7 +7,8 @@
    CSS Variables
 ------------------------ */
 :root {
-  --bg-primary: #F0F2FF;
+/*  --bg-primary: #F0F2FF;*/
+  --bg-primary: white;
   --brand-purple: #A390E4;
   --pale-lilac: #c8bbe6;
   --dark-lilac: #635c97;
