@@ -6,7 +6,7 @@
   text-align: center;
   min-height: 100vh;
   display: flex;
-   background-image: url("/bg-hero2.png");
+  background-image: url('/bg-hero.jpg');
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
@@ -241,9 +241,9 @@
 ===================================================== */
 
 .testimonials {
-  padding: 4rem 0 6rem;
-  background-color: var(--pale-lilac);
-  margin: -5rem 0 6rem;
+  padding: 4rem 0 3rem;
+  background-color: var(--softest-lilac);
+  margin: -3rem 0 6rem;
   position: relative;
   z-index: 30;
 }
@@ -260,6 +260,7 @@
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 2rem;
+  
 }
 
 .testimonial-card {
