@@ -1,6 +1,6 @@
 .FAQs {
   padding: 120px 0rem;
-  background-image: url("src/assets/bg-clouds3.png");
+  background-image: url("public/bg-clouds3.png");
   backdrop-filter: blur(4px);
   background-size: cover;
   background-position: center;
