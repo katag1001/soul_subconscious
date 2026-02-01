@@ -2,7 +2,7 @@
    Footer Base
 ------------------------ */
 .site-footer {
-  background: #F0F2FF;
+  background: var(--white);
   border-top: 1px solid rgba(163, 144, 228, 0.15);
   padding: 2.5rem 1.5rem;
 
