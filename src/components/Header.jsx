@@ -8,16 +8,24 @@ export default function Header() {
   const [lastScrollY, setLastScrollY] = useState(0)
 
   useEffect(() => {
+    let ticking = false
+
     const handleScroll = () => {
       const scrollY = window.scrollY
 
       // ----- show / hide header -----
-      if (scrollY > lastScrollY && scrollY > 80) {
-        setHidden(true)
-      } else {
-        setHidden(false)
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (scrollY > lastScrollY && scrollY > 80) {
+            setHidden(true)
+          } else {
+            setHidden(false)
+          }
+          setLastScrollY(scrollY)
+          ticking = false
+        })
+        ticking = true
       }
-      setLastScrollY(scrollY)
 
       // ----- background color + transparency fade -----
       const maxScroll = 400
@@ -25,7 +33,6 @@ export default function Header() {
 
       const start = { r: 240, g: 242, b: 255, a: 0 }
       const end = { r: 200, g: 187, b: 230, a: 0.5 }
-
 
       const r = Math.round(start.r + (end.r - start.r) * progress)
       const g = Math.round(start.g + (end.g - start.g) * progress)
@@ -49,52 +56,11 @@ export default function Header() {
           <h1 className="site-title">Soul & Subconscious</h1>
         </div>
         <nav className="site-nav">
-          <NavLink
-            to="/"
-            end
-            className={({ isActive }) =>
-              isActive ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Home
-          </NavLink>
-
-          <NavLink
-            to="/faqs"
-            className={({ isActive }) =>
-              isActive ? 'nav-link active' : 'nav-link'
-            }
-          >
-            FAQs
-          </NavLink>
-
-          <NavLink
-            to="/about"
-            className={({ isActive }) =>
-              isActive ? 'nav-link active' : 'nav-link'
-            }
-          >
-            About
-          </NavLink>
-
-          <NavLink
-            to="/services"
-            className={({ isActive }) =>
-              isActive ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Services
-          </NavLink>
-
-          <NavLink
-            to="/blog"
-            className={({ isActive }) =>
-              isActive ? 'nav-link active' : 'nav-link'
-            }
-          >
-            Blog
-          </NavLink>
-
+          <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>
+          <NavLink to="/faqs" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>FAQs</NavLink>
+          <NavLink to="/about" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>About</NavLink>
+          <NavLink to="/services" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Services</NavLink>
+          <NavLink to="/blog" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Blog</NavLink>
         </nav>
       </div>
     </header>
