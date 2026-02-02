@@ -24,20 +24,20 @@
   margin-bottom: 5rem;
 }
 
-.intro-text h1 {
+.main-intro h1 {
   font-family: var(--serif-font);
   font-size: 3rem;
   margin-bottom: 0.5rem;
 }
 
-.intro-text h2 {
+.main-intro h2 {
   font-family: var(--serif-font);
   font-size: 1.75rem;
   color: var(--dark-lilac);
   margin-bottom: 1.5rem;
 }
 
-.intro-text p {
+.main-intro p {
   color: var(--text-muted);
   font-size: 1rem;
   line-height: 1.7;
@@ -53,17 +53,17 @@
     margin-bottom: 3rem;
   }
 
-  .intro-text h1 {
-    font-size: 2.2rem;
+  .main-intro h1 {
+    font-size: 2rem;
   }
 
-  .intro-text h2 {
-    font-size: 1.4rem;
+  .main-intro h2 {
+    font-size: 1.1rem;
   }
 
-  .intro-text p {
+  .main-intro p {
     margin: 0 auto 2rem;
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -88,6 +88,10 @@
 /* =====================================================
    VIDEO INTRO SECTION
 ===================================================== */
+
+.video-intro {
+  padding: 4rem 1rem 3rem;
+}
 
 .video-intro h2 {
   font-family: var(--serif-font);

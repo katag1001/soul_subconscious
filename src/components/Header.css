@@ -104,7 +104,8 @@
 ------------------------ */
 @media (max-width: 768px) {
   .site-header {
-    padding: 0.75rem 0;
+    padding: 0.75rem 0 1rem;
+    height: auto;
   }
 
   .header-inner {

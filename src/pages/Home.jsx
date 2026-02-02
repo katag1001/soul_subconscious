@@ -33,7 +33,7 @@ export default function Home() {
       
         <div className="container">
           <div className="intro">
-            <div className="intro-text">
+            <div className="main-intro">
               <h1>Unlock Your Inner Calm</h1>
               <h2>Heal. Grow. Thrive.</h2>
               <p>
@@ -49,7 +49,7 @@ export default function Home() {
       </section>
       
 
-      {/* Video Introduction 
+      {/* Video Introduction */}
       <section className="video-intro">
         <div className="container">
           <h2>Meet Bianca</h2>
@@ -66,7 +66,7 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
-      </section>*/}
+      </section>
 
       
       {/* Cards */}

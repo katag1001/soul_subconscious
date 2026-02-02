@@ -19,7 +19,7 @@
   --white: #FFFFFF;
   --radius-lg: 18px;
   --radius-md: 14px;
-  --soft-shadow: 0 10px 30px rgba(163, 144, 228, 0.1);
+  --soft-shadow: 0 10px 30px rgba(163, 144, 228, 0.4);
   --plain-font: 'Montserrat', sans-serif;
   --serif-font: 'Playfair Display', serif;
 }
@@ -81,12 +81,6 @@ body {
 /* -----------------------
    Headings & Paragraphs
 ------------------------ */
-
-h2 {
-  font-family: var(--serif-font);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
 
 p {
   font-size: 1.1rem;

@@ -6,7 +6,6 @@
   padding-top: 120px;
 }
 
-/* Global box-sizing fix to prevent overflow */
 *,
 *::before,
 *::after {
@@ -25,6 +24,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   margin-bottom: 1rem;
+  color: var(--dark-lilac);
 }
 
 .blog-subtitle {
@@ -116,14 +116,15 @@
 }
 
 .blog-post .container {
-  max-width: 800px; /* keeps lines readable */
+  max-width: 800px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 /* Blog title */
 .blog-post h1 {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--serif-font);
+  color: var(--dark-lilac);
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
   line-height: 1.2;
