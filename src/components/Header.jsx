@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './Header.css'
+import Logo from '../assets/logo.png'
+
 
 export default function Header() {
   const [bgColor, setBgColor] = useState('rgba(240, 242, 255, 0)')
@@ -51,9 +53,11 @@ export default function Header() {
       className={`site-header ${hidden ? 'header-hidden' : ''}`}
       style={{ backgroundColor: bgColor }}
     >
-      <div className="container header-inner">
+      <div className="header-inner">
         <div className="brand">
-          <h1 className="site-title">Soul & Subconscious</h1>
+          {/* <h1 className="site-title">Soul & Subconscious</h1> */}
+          {Logo && <img src={Logo} alt="Soul & Subconscious Logo" className="site-logo" />}
+
         </div>
         <nav className="site-nav">
           <NavLink to="/" end className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>Home</NavLink>

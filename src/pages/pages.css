@@ -21,7 +21,8 @@
   --radius-md: 14px;
   --soft-shadow: 0 10px 30px rgba(163, 144, 228, 0.4);
   --plain-font: 'Montserrat', sans-serif;
-  --serif-font: 'Playfair Display', serif;
+  /*--serif-font: 'Playfair Display', serif;*/
+  --serif-font: 'Montserrat', sans-serif;
 }
 
 #root {
