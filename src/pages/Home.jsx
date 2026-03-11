@@ -126,16 +126,16 @@ export default function Home() {
           <h2>What Our Clients Say...</h2>
           <div className="testimonial-grid">
             <div className="testimonial-card">
-              <p>"Bianca helped me overcome my anxiety and gave me tools I use daily. Truly life-changing!"</p>
-              <h4>- Sarah J.</h4>
+              <p>“I was feeling nervous and apprehensive, but this quickly disappeared once we started talking. I felt like a weight had been lifted from my shoulders straight after the session.”</p>
+              <h4>- A.B.</h4>
             </div>
             <div className="testimonial-card">
-              <p>"I never thought I could feel so confident again. Her sessions are magical."</p>
-              <h4>- Michael R.</h4>
+              <p>“I feel much more confident and so much love towards myself. I’ve noticed clear positive shifts in my life since the session.”</p>
+              <h4>- Aini. P</h4>
             </div>
             <div className="testimonial-card">
-              <p>"Thanks to Bianca, my relationship has improved drastically. Highly recommend RTT."</p>
-              <h4>- Emily T.</h4>
+              <p>“Working with Bianca is a game changer. I can’t imagine a better professional to make this journey with.”</p>
+              <h4>- P.</h4>
             </div>
           </div>
         </div>

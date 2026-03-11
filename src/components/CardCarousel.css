@@ -30,7 +30,7 @@
   height: 380px;
   background: var(--bg-primary);
   border-radius: var(--radius-lg);
-  box-shadow: var(--soft-shadow);
+  box-shadow: var(--btn-shadow);
   transform: translate(-50%, -50%);
   transition: all 0.65s ease;
   opacity: 0;

@@ -26,8 +26,8 @@
 
 :root {
   --bg: #a7b4cb;
-  --bg-primary: rgb(252, 249, 241);
-  --brand: rgba(246, 240, 226);
+  --bg-primary: rgb(255, 250, 238);
+  --brand: rgb(255, 247, 247);
   --pale: rgba(218, 236, 236);
   --pale-opaque: rgba(218, 236, 236, 0.8);
   --dark: rgba(112, 149, 172);
@@ -39,7 +39,8 @@
   --header-bg: rgb(147, 181, 196); 
   --radius-lg: 10px;
   --radius-md: 14px;
-  --soft-shadow: 0 10px 30px rgba(37, 81, 122, 0.9);
+  --soft-shadow: 0 10px 30px rgba(166, 205, 242, 0.7);
+  --btn-shadow: 0 10px 30px rgba(166, 205, 242, 0.2);
   --radius-lg: 18px;
   --plain-font: 'Montserrat', sans-serif;
   --serif-font: 'Montserrat', sans-serif;
@@ -96,7 +97,7 @@ body {
   color: var(--text-dark);
   cursor: pointer;
   background: var(--brand);
-  box-shadow: var(--soft-shadow);
+  box-shadow: var(--btn-shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
