@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './Header.css'
-import Logo from '../assets/logo2.jpg'
+/*import Logo from '../assets/logo2.jpg'*/
 
 
 export default function Header() {
@@ -34,7 +34,7 @@ export default function Header() {
       const progress = Math.min(scrollY / maxScroll, 1)
 
       const start = { r: 147, g: 181, b: 196, a: 0 }
-      const end = { r: 147, g: 181, b: 196, a: 0.5 }
+      const end = { r: 147, g: 181, b: 196, a: 0.8 }
 
       const r = Math.round(start.r + (end.r - start.r) * progress)
       const g = Math.round(start.g + (end.g - start.g) * progress)

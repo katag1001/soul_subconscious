@@ -1,26 +1,38 @@
 import '../pages/pages.css'
 import '../pages/home.css'
-import BiancaImg from '../assets/Bianca.png'
+
+import BookingForm from '../components/BookingForm.jsx';
+
 import CardCarousel from '../components/CardCarousel.jsx';
 import WaveBackground from '../components/WaveBackground.jsx';
-import BookingForm from '../components/BookingForm.jsx';
+
+import img1 from '../assets/img1.png'
+import img2 from '../assets/img2.png'
+import img3 from '../assets/img3.png'
+import img4 from '../assets/img4.png'
+
 
 export default function Home() {
   const cards = [
   {
-    title: "First Card",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image: BiancaImg,
+    title: "Rapid Transformational Therapy",
+    text: "Work with the subconscious mind to uncover and shift the root of recurring patterns. Designed for deeper change when you feel ready to move beyond surface level solutions.",
+    image: img1,
   },
   {
-    title: "Second Card",
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    image: BiancaImg,
+    title: "Personalised Hypnosis Recording",
+    text: "A custom hypnosis recording created specifically for your goals and beliefs. Includes a one hour call and a tailored recording you can return to anytime.",
+    image: img2,
+  },
+    {
+    title: "Rapid Alignment Audios",
+    text: "Short personalised audios designed for the moments your mind is most receptive. Choose a Morning Activation or Sleep Rewire to gently train new beliefs daily.",
+    image:  img3,
   },
   {
-    title: "Third Card",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    image:  BiancaImg,
+    title: "Identity Shift Programs",
+    text: "60 or 90 day containers supporting deep subconscious change and identity level shifts.",
+    image:  img4,
   },
 ];
 
@@ -34,8 +46,8 @@ export default function Home() {
         <div className="container">
           <div className="intro">
             <div className="main-intro">
-              <h1>Change the beliefs that keep you stuck</h1>
-              <h2>Create the life you want</h2>
+              <h1>Create the life you want</h1>
+              <h2>Change the beliefs that keep you stuck</h2>
               <p>
                Explore · Release · Rewire
               </p>
