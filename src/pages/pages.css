@@ -25,8 +25,8 @@
 }*/
 
 :root {
-  --bg: #a7b4cb;
-  --bg-primary: rgb(255, 250, 238);
+  --bg: #e5f0ff;
+  --bg-primary: rgb(249, 249, 249);
   --brand: rgb(255, 247, 247);
   --pale: rgba(218, 236, 236);
   --pale-opaque: rgba(218, 236, 236, 0.8);

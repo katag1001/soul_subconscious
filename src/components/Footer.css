@@ -69,11 +69,7 @@
 /* Hover Effects */
 .social:hover {
   color: var(--bg-primary);
-  background: linear-gradient(
-    45deg,
-    var(--brand) 0%,
-    var(--accent) 100%
-  );
+  background: var(--dark);
   transform: translateY(-2px);
   box-shadow: 0 12px 28px var(--soft-shadow);
 }

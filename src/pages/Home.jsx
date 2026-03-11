@@ -51,7 +51,10 @@ export default function Home() {
               <p>
                Explore · Release · Rewire
               </p>
-              <button className="primary-btn" href="/services">
+              <button
+                className="primary-btn"
+                onClick={() => window.location.href = '/services'}
+              >
                 Explore Services
               </button>
             </div>
@@ -111,10 +114,16 @@ export default function Home() {
       <section className="download-hypnosis">
         <div className="container">
           <div className="download-info-wrapper">
-          <h2>Download Your Free Hypnosis Recording</h2>
-          <p>Start your journey to calm and clarity today with a free guided session.</p>
+            <h2>Download Your Free Hypnosis Recording</h2>
+            <p>Start your journey to calm and clarity today with a free guided session.</p>
           </div>
-          <a className="primary-btn">Download Now</a>
+          <a
+            className="primary-btn"
+            href="/relaxation.m4a"
+            download="relaxation.m4a"
+          >
+            Download Now
+          </a>
         </div>
       </section>
       </WaveBackground>

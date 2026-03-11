@@ -40,7 +40,7 @@ export default function BookingForm() {
     <section className="services-booking">
       <div className="container booking-wrapper">
         <h2>Book Your Session</h2>
-        <p>Schedule your consultation today and take the first step toward transformation.</p>
+        <p>Book a free 30-minute clarity call now.</p>
 
         {submitted ? (
           <p style={{ fontSize: '1.2rem', color: 'var(--brand-purple)' }}>Thank you! Your message has been sent.</p>
@@ -64,7 +64,7 @@ export default function BookingForm() {
             />
             <textarea
               name="message"
-              placeholder="Your Message"
+              placeholder="Your message"
               rows="4"
               value={formData.message}
               onChange={handleChange}
