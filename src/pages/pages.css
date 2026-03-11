@@ -5,25 +5,46 @@
 
 /* -----------------------
    CSS Variables
------------------------- */
+------------------------ 
 :root {
-  --bg-lilac: #F0F2FF;
+  --bg: #F0F2FF;
   --bg-primary: white;
-  --brand-purple: #A390E4;
-  --pale-lilac: #c8bbe6;
-  --dark-lilac: #635c97;
-  --softest-lilac: #f4efff;
-  --accent-pink: #EE99C2;
+  --brand: #A390E4;
+  --pale: #c8bbe6;
+  --dark: #635c97;
+  --softest: #f4efff;
+  --accent: #EE99C2;
   --text-dark: #1A1A1A;
+  --text-light: rgb(255, 255, 255);
   --text-muted: #3D5A80;
-  --white: #FFFFFF;
   --radius-lg: 18px;
   --radius-md: 14px;
   --soft-shadow: 0 10px 30px rgba(163, 144, 228, 0.4);
   --plain-font: 'Montserrat', sans-serif;
-  /*--serif-font: 'Playfair Display', serif;*/
+  --serif-font: 'Montserrat', sans-serif;
+}*/
+
+:root {
+  --bg: #a7b4cb;
+  --bg-primary: rgb(252, 249, 241);
+  --brand: rgba(246, 240, 226);
+  --pale: rgba(218, 236, 236);
+  --pale-opaque: rgba(218, 236, 236, 0.8);
+  --dark: rgba(112, 149, 172);
+  --dark-opaque: rgba(112, 149, 172, 0.6);
+  --accent: #273f5e;
+  --text-dark: #273f5e;
+  --text-light: rgb(255, 255, 255);
+  --text-muted: rgb(61, 90, 128);
+  --header-bg: rgb(147, 181, 196); 
+  --radius-lg: 10px;
+  --radius-md: 14px;
+  --soft-shadow: 0 10px 30px rgba(37, 81, 122, 0.9);
+  --radius-lg: 18px;
+  --plain-font: 'Montserrat', sans-serif;
   --serif-font: 'Montserrat', sans-serif;
 }
+
 
 #root {
 
@@ -38,9 +59,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--plain-font);
-  background: var(--bg-primary);
   color: var(--text-dark);
   letter-spacing: 0.5px;
+
+  background-image: url('/bg-hero2.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .page {
@@ -66,17 +92,17 @@ body {
   padding: 0.9rem 2.2rem;
   font-size: 0.95rem;
   font-weight: 400;
-  border-radius: var(--radius-lg);
-  color: var(--white);
+  border-radius: 8px;
+  color: var(--text-dark);
   cursor: pointer;
-  background: linear-gradient(45deg, var(--brand-purple), var(--accent-pink));
+  background: var(--brand);
   box-shadow: var(--soft-shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .primary-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 14px 35px rgba(163, 144, 228, 0.18);
+  box-shadow: 0 14px 35px var(--soft-shadow);
 }
 
 /* -----------------------

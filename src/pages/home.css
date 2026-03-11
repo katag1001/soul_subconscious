@@ -3,14 +3,18 @@
 ===================================================== */
 
 .hero-homepage {
+  position: relative;
   text-align: center;
   min-height: 100vh;
   display: flex;
-  background-image: url('/bg-hero.jpg');
+
+  /*background-image: url('/bg-hero2.png');
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   background-repeat: no-repeat;
-  backdrop-filter: blur(4px);
+  background-attachment: fixed;*/
+
+  z-index: 0;
 }
 
 /* ---------- Intro ---------- */
@@ -35,20 +39,22 @@
 
 .main-intro h1 {
   font-family: var(--serif-font);
+  color: var(--text-light);
   font-size: 4rem;
   margin-bottom: 0.5rem;
+  font-weight: 500;
 }
 
 .main-intro h2 {
   font-family: var(--serif-font);
-  font-size: 1.75rem;
-  color: var(--dark-lilac);
+  font-size: 1.9rem;
+  color: var(--text-muted);
   margin-bottom: 1.5rem;
 }
 
 .main-intro p {
-  color: var(--text-muted);
-  font-size: 1rem;
+  color: var(--text-light);
+  font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: 2rem;
   max-width: 480px;
@@ -81,6 +87,13 @@
    Card carousel SECTION
 ===================================================== */
 
+.cards-info {
+  background-color: var(--bg-primary);
+  padding: 3rem 0;
+  z-index: 2;
+  position: relative;
+}
+
 .carousel-wrapper {
   padding: 60px;
 }
@@ -100,7 +113,12 @@
 
 .video-intro {
   padding: 4rem 1rem 3rem;
+  position: relative;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+  z-index: 2;
 }
+
 
 .video-intro h2 {
   font-family: var(--serif-font);
@@ -143,10 +161,11 @@
 
 .rtt-info {
   position: relative;
-  background-color: var(--pale-lilac);
+  background-color: var(--dark-opaque);
   min-height: 70vh;
   padding: 3rem;
   overflow: hidden;
+  z-index: 2;
 }
 
 .rtt-title {
@@ -254,9 +273,9 @@
 ===================================================== */
 
 .testimonials {
-  padding: 4rem 0 3rem;
-  background-color: var(--softest-lilac);
-  margin: -3rem 0 6rem;
+  padding: 6rem 0;
+  background-color: var(--dark);
+  margin: -3rem 0 0;
   position: relative;
   z-index: 30;
 }
@@ -277,7 +296,7 @@
 }
 
 .testimonial-card {
-  background: var(--white);
+  background: var(--bg-primary);
   padding: 2rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--soft-shadow);
@@ -287,7 +306,7 @@
 
 .testimonial-card h4 {
   margin-top: 1rem;
-  color: var(--brand-purple);
+  color: var(--text-muted);
   font-weight: 600;
   font-style: normal;
 }
@@ -302,4 +321,9 @@
   .testimonial-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+.lead-form {
+  background-color: var(--bg-primary);
 }

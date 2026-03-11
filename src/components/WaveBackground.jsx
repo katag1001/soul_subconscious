@@ -18,13 +18,13 @@ export default function WaveBackground({
       >
         <defs>
           <linearGradient id="wavePrimary" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="var(--brand-purple)" stopOpacity="0.5" />
-            <stop offset="100%" stopColor="var(--accent-pink)" stopOpacity="0.5" />
+            <stop offset="0%" stopColor="var(--dark)" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="var(--pale)" stopOpacity="0.7" />
           </linearGradient>
 
           <linearGradient id="waveSecondary" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="var(--accent-pink)" stopOpacity="0.45" />
-            <stop offset="100%" stopColor="var(--brand-purple)" stopOpacity="0.45" />
+            <stop offset="0%" stopColor="var(--dark)" stopOpacity="0.7" />
+            <stop offset="100%" stopColor="var(--pale)" stopOpacity="0.7" />
           </linearGradient>
         </defs>
 

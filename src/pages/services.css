@@ -22,7 +22,7 @@
   font-family: var(--serif-font);
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: var(--dark-lilac);
+  color: var(--dark);
 }
 
 .intro-text p {
@@ -55,7 +55,7 @@
 ===================================================== */
 .services-grid {
   padding: 4rem 1rem;
-  background-color: var(--softest-lilac);
+  background-color: var(--softest);
 }
 
 .grid-wrapper {
@@ -65,7 +65,7 @@
 }
 
 .service-card {
-  background-color: var(--white);
+  background-color: var(--bg-primary);
   padding: 2rem;
   border-radius: var(--radius-lg);
   box-shadow: var(--soft-shadow);

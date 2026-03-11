@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import './Header.css'
-import Logo from '../assets/logo.png'
+import Logo from '../assets/logo2.jpg'
 
 
 export default function Header() {
@@ -33,8 +33,8 @@ export default function Header() {
       const maxScroll = 400
       const progress = Math.min(scrollY / maxScroll, 1)
 
-      const start = { r: 240, g: 242, b: 255, a: 0 }
-      const end = { r: 200, g: 187, b: 230, a: 0.5 }
+      const start = { r: 147, g: 181, b: 196, a: 0 }
+      const end = { r: 147, g: 181, b: 196, a: 0.5 }
 
       const r = Math.round(start.r + (end.r - start.r) * progress)
       const g = Math.round(start.g + (end.g - start.g) * progress)
@@ -55,8 +55,8 @@ export default function Header() {
     >
       <div className="header-inner">
         <div className="brand">
-          {/* <h1 className="site-title">Soul & Subconscious</h1> */}
-          {Logo && <img src={Logo} alt="Soul & Subconscious Logo" className="site-logo" />}
+          { <h1 className="site-title">Soul & Subconscious</h1>}
+          {/* Logo && <img src={Logo} alt="Soul & Subconscious Logo" className="site-logo" />*/ }
 
         </div>
         <nav className="site-nav">

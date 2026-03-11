@@ -1,7 +1,7 @@
 
 .FAQs {
   padding: 120px 0rem;
-  background: white;
+  background: var(--bg-primary);
 }
 
 
@@ -10,7 +10,7 @@
   margin-bottom: 40px;
   font-size: 2.5rem;
   font-family: var(--serif-font); 
-  color: var(--dark-lilac);
+  color: var(--dark);
 }
 
 .faqs-content {

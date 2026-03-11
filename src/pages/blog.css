@@ -24,7 +24,7 @@
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
   margin-bottom: 1rem;
-  color: var(--dark-lilac);
+  color: var(--dark);
 }
 
 .blog-subtitle {
@@ -51,7 +51,7 @@
 
 .blog-meta {
   font-size: 0.8rem;
-  color: #A390E4;
+  color: var(--dark);
   margin-bottom: 1.2rem;
   letter-spacing: 0.6px;
   text-transform: uppercase;
@@ -83,7 +83,7 @@
   margin-top: 0.5rem;
   font-size: 0.9rem;
   text-decoration: none;
-  color: #A390E4;
+  color: var(--dark);
   transition: color 0.25s ease;
 }
 
@@ -110,7 +110,7 @@
 .blog-post {
   padding-top: 120px;
   padding-bottom: 5rem;
-  background-color: #f9f9fb;
+  background-color: var(--bg-primary);
   font-family: 'Inter', sans-serif;
   color: var(--text-dark);
 }
@@ -124,7 +124,7 @@
 /* Blog title */
 .blog-post h1 {
   font-family: var(--serif-font);
-  color: var(--dark-lilac);
+  color: var(--dark);
   font-size: 2.8rem;
   margin-bottom: 0.5rem;
   line-height: 1.2;
@@ -134,7 +134,7 @@
 /* Blog meta info */
 .blog-post .blog-meta {
   font-size: 0.9rem;
-  color: #A390E4;
+  color: var(--dark);
   text-align: center;
   margin-bottom: 2rem;
   letter-spacing: 0.6px;

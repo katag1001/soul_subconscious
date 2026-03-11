@@ -2,15 +2,15 @@
    Footer Base
 ------------------------ */
 .site-footer {
-  background: var(--white);
-  border-top: 1px solid rgba(163, 144, 228, 0.15);
+  background: var(--bg-primary);
+  border-top: 1px solid var(--dark);
   padding: 2.5rem 1.5rem;
 
 }
 
 /* Reuse container sizing */
 .site-footer .container {
-  max-width: 1100px;
+  width: 100vw;
   margin: 0 auto;
 }
 
@@ -28,9 +28,8 @@
    Brand / Left Side
 ------------------------ */
 .footer-left {
-  font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
-  color: #1A1A1A;
+  color: var(--text-muted);
   letter-spacing: 0.6px;
 }
 
@@ -56,9 +55,9 @@
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  color: #A390E4;
-  background: #FFFFFF;
-  box-shadow: 0 8px 20px rgba(163, 144, 228, 0.12);
+  color: var(--dark);
+  background: var(--bg-primary);
+  box-shadow: 0 8px 20px var(--box-shadow);
   transition: all 0.25s ease;
   text-decoration: none;
 }
@@ -70,19 +69,19 @@
 
 /* Hover Effects */
 .social:hover {
-  color: #FFFFFF;
+  color: var(--bg-primary);
   background: linear-gradient(
     45deg,
-    #A390E4,
-    #EE99C2
+    var(--brand) 0%,
+    var(--accent) 100%
   );
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px rgba(163, 144, 228, 0.25);
+  box-shadow: 0 12px 28px var(--soft-shadow);
 }
 
 /* Focus (Accessibility) */
 .social:focus-visible {
-  outline: 2px solid #A390E4;
+  outline: 2px solid var(--brand);
   outline-offset: 3px;
 }
 

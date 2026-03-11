@@ -28,7 +28,7 @@
   left: 50%;
   width: 760px;
   height: 380px;
-  background: var(--white);
+  background: var(--bg-primary);
   border-radius: var(--radius-lg);
   box-shadow: var(--soft-shadow);
   transform: translate(-50%, -50%);
@@ -182,6 +182,7 @@
     top: 0;
     left: 50%;
     opacity: 0;
+    background: var(--bg-primary);
     pointer-events: none;
   }
 
