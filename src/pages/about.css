@@ -4,8 +4,8 @@
 ===================================================== */
 
 .about-bio {
-  padding: 6rem 1rem;
-  background-color: var(--bg);
+  padding: 8rem 1rem;
+  background-color: var(--bg-primary);
 }
 
 .bio-wrapper {

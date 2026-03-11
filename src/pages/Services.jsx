@@ -7,20 +7,20 @@ import BookingForm from '../components/BookingForm.jsx';
 export default function Services() {
   const services = [
     {
-      title: "Service One",
-      details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      title: "Rapid Transformational Therapy",
+      details: "Work with the subconscious mind to uncover and shift the root of recurring patterns. Designed for deeper change when you feel ready to move beyond surface level solutions."
     },
     {
-      title: "Service Two",
-      details: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      title: "Personalised Hypnosis Recording",
+      details: "A custom hypnosis recording created specifically for your goals and beliefs. Includes a one hour call and a tailored recording you can return to anytime."
     },
     {
-      title: "Service Three",
-      details: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      title: "Rapid Alignment Audios",
+      details: "Short personalised audios designed for the moments your mind is most receptive. Choose a Morning Activation or Sleep Rewire to gently train new beliefs daily."
     },
     {
-      title: "Service Four",
-      details: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      title: "Identity Shift Programs",
+      details: "60 or 90 day containers supporting deep subconscious change and identity level shifts."
     },
   ]
 
@@ -54,10 +54,10 @@ export default function Services() {
         </div>
       </section>
 
-      {/* Full-width Image */}
+      {/* Full-width Image 
       <section className="services-image-wide">
         <img src={TherapyWide} alt="Therapy Session Wide" />
-      </section>
+      </section> */}
 
       {/* Booking / Call-to-Action Section */}
       <BookingForm />

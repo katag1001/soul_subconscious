@@ -39,8 +39,8 @@
   --header-bg: rgb(147, 181, 196); 
   --radius-lg: 10px;
   --radius-md: 14px;
-  --soft-shadow: 0 10px 30px rgba(166, 205, 242, 0.7);
-  --btn-shadow: 0 10px 30px rgba(166, 205, 242, 0.2);
+  --soft-shadow: 0 10px 30px rgba(56, 56, 57, 0.5);
+  --btn-shadow: 0 10px 30px rgba(56, 56, 57, 0.2);
   --radius-lg: 18px;
   --plain-font: 'Montserrat', sans-serif;
   --serif-font: 'Montserrat', sans-serif;
@@ -96,7 +96,7 @@ body {
   border-radius: 8px;
   color: var(--text-dark);
   cursor: pointer;
-  background: var(--brand);
+  background: var(--bg-primary);
   box-shadow: var(--btn-shadow);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }

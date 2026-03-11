@@ -20,10 +20,11 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
+            {/*<Route path="/about" element={<About />} />*/}
             <Route path="/services" element={<Services />} />
-            <Route path="/blog" element={<Blog />} />
+            {/*<Route path="/blog" element={<Blog />} />*/}
             <Route path="/faqs" element={<FAQs />} />
+            <Route path="*" element={<Home />} />
 
             {/* Blog post routes */}
             <Route path="/blog/power-of-the-subconscious-mind" element={<PowerOfSubconscious />} />
