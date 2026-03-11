@@ -62,8 +62,7 @@ body {
   font-family: var(--plain-font);
   color: var(--text-dark);
   letter-spacing: 0.5px;
-
-  background-image: url('/bg-hero2.jpg');
+  background-image: url('/bg-hero3.jpg');
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
