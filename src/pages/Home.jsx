@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
 
-      {/* Video Introduction */}
+      {/* Video Introduction 
       <section className="video-intro">
         <div className="container">
           <h2>Meet Bianca</h2>
@@ -106,7 +106,7 @@ export default function Home() {
             ></iframe>
           </div>
         </div>
-      </section>
+      </section>*/}
 
 
       {/* Free Hypnosis Download */}
