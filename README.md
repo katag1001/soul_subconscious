@@ -1,17 +1,43 @@
-# React + Vite
+# Soul Subconscious Hypnotherapy (Client Site)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based front-end for a hypnotherapy counseling and coaching website. This app presents services, blog content, FAQs, an online booking form, and calming design elements to help clients discover hypnotherapy, schedule sessions, and learn self-care strategies.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Responsive, mobile-friendly UI
+- Home, About, Services, Blog, and FAQs pages
+- Blog post navigation (articles on healing, self-compassion, subconscious work)
+- Booking form for appointment inquiries
+- Animated and soothing background elements for a calming experience
+- Accessible content sections and modern styling
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React (JSX component architecture)
+- Vite (fast development server and build tooling)
+- CSS modules/files for component-level styling
+- Browser routing via `react-router` (or built-in Vite routing patterns)
+- Standard web stack: HTML5, CSS3, ES202x JavaScript
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# soul_subconscious
+- `src/App.jsx`: main app component and route setup
+- `src/main.jsx`: React entry point
+- `src/components/`: reusable components (Header, Footer, card grids, carousel, etc.)
+- `src/pages/`: page-level views (`Home`, `About`, `Services`, `Blog`, `FAQs`)
+- `src/pages/blogs/`: individual blog article pages
+- `public/`: static assets and icons
+
+## Run locally
+
+1. `npm install`
+2. `npm run dev`
+3. Open `http://localhost:5173` (default Vite port)
+
+## Build for production
+
+- `npm run build`
+
+## Notes
+
+This app is designed primarily as a client-facing informational and contact portal for a hypnotherapy practice, encouraging visitors to connect and schedule sessions in a warm, supportive style.
