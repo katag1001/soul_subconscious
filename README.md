@@ -28,15 +28,6 @@ A React-based front-end for a hypnotherapy counseling and coaching website. This
 - `src/pages/blogs/`: individual blog article pages
 - `public/`: static assets and icons
 
-## Run locally
-
-1. `npm install`
-2. `npm run dev`
-3. Open `http://localhost:5173` (default Vite port)
-
-## Build for production
-
-- `npm run build`
 
 ## Notes
 
